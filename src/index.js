@@ -1,1 +1,7 @@
-console.log('hello from webpack');
+import {basePage} from "./page";
+import {tabOne} from "./page";
+import "./style.css"
+
+
+// basePage();
+// tabOne();
