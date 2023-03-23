@@ -15,17 +15,15 @@ body {
 }
 
 footer {
-    padding-top: 1rem;
     box-sizing: border-box;
     background-color: #EBD747;
     width: 100%;
     height: 4rem;
-    display: flex;
-    justify-content: center;
     gap: 6rem;
     margin-bottom: 2.5rem;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -84,4 +82,21 @@ header span {
 #text-container {
     margin: 2rem;
     font-size: 1.25rem;
+}
+
+#menu {
+    text-decoration: underline;
+    font-size: 1.75rem;
+}
+
+.img {
+    max-height: 185px;
+    width: auto;
+}
+
+
+#item1 > div, #item2 > div, #item3 > div {
+    margin-top: .1125rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
 }
