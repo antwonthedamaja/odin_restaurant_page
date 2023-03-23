@@ -10,9 +10,8 @@ const page2 = document.querySelector("#page2");
 let page1Trigger = true;
 let page2Trigger = false;
 
-// tabOne();
-// page1.classList.add('selected');
 tabOne();
+page1.classList.add('selected');
 
 page1.addEventListener('click', () => {
     if (page1Trigger === false) {

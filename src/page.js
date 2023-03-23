@@ -1,3 +1,8 @@
+import Picture from './picture.png';
+import Item1 from './item1.jpg'
+import Item2 from './item2.png'
+import Item3 from './item3.png'
+
 function elementFactory(type, class1, class2, id, text) {
     const element = document.createElement(type);
     if (class1) element.classList.add(class1);
@@ -23,9 +28,9 @@ export function tabOne() {
     const content = document.querySelector("#content");
     content.innerHTML = '';
     content.appendChild(elementFactory('h1', undefined, undefined, undefined, `Welcome to Antwon's Pizzeria!`));
-    const img = elementFactory('img', undefined, undefined, undefined, undefined);
-    img.setAttribute('src', '/src/picture.png')
-    content.appendChild(img);
+    const img0 = new Image();
+    img0.src = Picture;
+    content.appendChild(img0);
     content.appendChild(elementFactory('div', undefined, undefined, 'alt', `<em>Antwon in his kitchen</em>`));
     content.appendChild(elementFactory('div', undefined, undefined, 'text-container', `<b>When the moon hits your eye and you want a pizza pie</b>, come try the Pizza Tower or any of your favorites 
     at Antwon's Pizzeria. Antwon D'Maja has been making pizza since he opened his first pizzeria in the year of 1868.`));
@@ -39,21 +44,21 @@ export function tabTwo() {
     content.innerHTML = '';
     content.appendChild(elementFactory('h1', undefined, undefined, 'menu', `Menu`));
     content.appendChild(elementFactory('div', undefined, undefined, 'item1', undefined));
-    const img1 = elementFactory('img', undefined, undefined, undefined, undefined);
-    img1.setAttribute('src', '/src/item1.jpg');
-    img1.setAttribute('class', 'img');
-    content.lastChild.appendChild(img1);
+    const item1 = new Image();
+    item1.src = Item1;
+    item1.classList.add('img');
+    content.lastChild.appendChild(item1);
     content.lastChild.appendChild(elementFactory('div', undefined, undefined, undefined, 'The Pizza Tower: <b><u>$79.99</b></u>'));
     content.appendChild(elementFactory('div', undefined, undefined, 'item2', undefined));
-    const img2 = elementFactory('img', undefined, undefined, undefined, undefined);
-    img2.setAttribute('src', '/src/item2.png');
-    img2.setAttribute('class', 'img');
-    content.lastChild.appendChild(img2);
+    const item2 = new Image();
+    item2.src = Item2;
+    item2.classList.add('img');
+    content.lastChild.appendChild(item2);
     content.lastChild.appendChild(elementFactory('div', undefined, undefined, undefined, 'Pizza Ball: <b><u>$19.99</b></u>'));
     content.appendChild(elementFactory('div', undefined, undefined, 'item3', undefined));
-    const img3 = elementFactory('img', undefined, undefined, undefined, undefined);
-    img3.setAttribute('src', '/src/item3.png');
-    img3.setAttribute('class', 'img');
-    content.lastChild.appendChild(img3);
+    const item3 = new Image();
+    item3.src = Item3;
+    item3.classList.add('img');
+    content.lastChild.appendChild(item3);
     content.lastChild.appendChild(elementFactory('div', undefined, undefined, undefined, `'Pizza the Hutt' Pizza Mountain: <b><u>$124.99</b></u>`));
 }
